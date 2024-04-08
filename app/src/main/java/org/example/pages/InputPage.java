@@ -51,7 +51,7 @@ public class InputPage {
         String [] categories = {"Belum terkategori", "Aplikasi web", "Aplikasi mobile", "Akun lainnya"};
         SelectInput select = new SelectInput("Pilihan", categories, width);
         select.draw();
-        int cat = select.getValue();
+        int cat = select.getValue() - 1;
 
         DataPassword.passData.add(new PasswordStore(account_name, username, pass, cat));
 

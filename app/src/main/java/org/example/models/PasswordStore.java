@@ -99,9 +99,13 @@ public class PasswordStore {
                 return "Aplikasi mobile";
             }
             case 3 -> {
-                return"Akun lainnya";
+                return "Akun lainnya";
             }
         }
+    }
+
+    public int getCategoryInt(){
+        return category;
     }
     
     public void calculateScore(String plainPass)

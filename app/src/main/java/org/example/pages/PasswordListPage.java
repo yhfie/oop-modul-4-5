@@ -47,8 +47,8 @@ public class PasswordListPage {
             for (int i = 0; i < 20 - passData.username.length(); i++) {
                 System.out.print(" ");
             }
-            System.out.print("|  " + passData.getPassword());
-            for (int i = 0; i < 20 - passData.getPassword().length(); i++) {
+            System.out.print("|  " + passData.getCategory());
+            for (int i = 0; i < 20 - passData.getCategory().length(); i++) {
                 System.out.print(" ");
             }
             System.out.println("|");

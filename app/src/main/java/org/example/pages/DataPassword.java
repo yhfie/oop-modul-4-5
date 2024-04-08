@@ -19,7 +19,8 @@ public class DataPassword {
     public static final ArrayList<PasswordStore> passData = new ArrayList<>();
 
     private static final String csvPath = "./datapassword.csv";
-    private static final String [] headers = {"password", "hashkey"};
+    private static final String [] headers = {"name", "username", "password",
+"hashkey", "category", "score"};
 
     public static void saveCSVData(){
         if(passData.isEmpty()){
@@ -31,8 +32,7 @@ public class DataPassword {
                 CSVFormat formater = CSVFormat.DEFAULT.builder().setHeader(headers).build();
                 CSVPrinter printer = new CSVPrinter(writer, formater);
                 for(PasswordStore pass: passData){
-                    printer.printRecord(pass.getEncryptedPassword(),
-                    pass.getHashKey());
+                    printer.printRecord(pass.name, pass.username, pass.getEncryptedPassword(), pass.getHashKey(), pass.getCategoryInt(), pass.getScore());
                 }
                 printer.flush();
             } catch (IOException ex) {
