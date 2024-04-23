@@ -1,6 +1,6 @@
 package org.example.pages.components;
 
-public class Label {
+public class Label implements Component{
     private int width;
     private String text;
 

@@ -1,6 +1,6 @@
 package org.example.pages.components;
 
-public class SelectInput {
+public class SelectInput implements Component{
     private String label, selection[];
     public Input input;
     private int width, value;

@@ -1,6 +1,6 @@
 package org.example.pages.components;
 
-public class HLine {
+public class HLine implements Component{
     private int width;
 
     public HLine(int width){

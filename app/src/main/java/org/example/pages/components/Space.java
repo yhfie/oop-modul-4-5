@@ -1,6 +1,6 @@
 package org.example.pages.components;
 
-public class Space {
+public class Space implements Component{
     private int width;
 
     public Space(int width){

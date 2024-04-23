@@ -1,7 +1,7 @@
 package org.example.pages.components;
 import java.util.Scanner;
 
-public class Input {
+public class Input implements Component{
     private String label;
     public Scanner input = new Scanner(System.in);;
     private String value;

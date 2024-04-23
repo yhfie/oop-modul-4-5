@@ -19,7 +19,7 @@ public class App {
     public static void main(String[] args) {
         // System.out.println(new App().getGreeting());
         DataPassword.loadCSVData();
-        new MainPage("Aplikasi Store Password", 100).draw();
+        new MainPage(90).draw();
         DataPassword.saveCSVData();
 
     }
